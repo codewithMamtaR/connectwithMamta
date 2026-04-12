@@ -798,12 +798,11 @@ export default function StudentList() {
       <Box
                   sx={{
                     overflow:'hidden',
-                        position: 'relative',
+                    position: 'relative',
                         minHeight:'100vh',
-                    
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    color: '#fff',
+                    color: 'black',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -811,16 +810,7 @@ export default function StudentList() {
                     textAlign: 'center',
                     px: 2,
                     py: 4,
-                   '&::before': {
-                    content: '""',
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      height: '100%',
-                      width: '100%',
-                      background: 'rgba(0, 0, 0, 0.5)', // Dark semi-transparent overlay
-                      zIndex: 1,
-                    },
+                   
                     zIndex:0,
                       
                   }}
