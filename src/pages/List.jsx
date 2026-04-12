@@ -794,39 +794,13 @@ export default function StudentList() {
 
   return (
     <>
-      <AppBar position="static" color="transparent">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: "'Anton', sans-serif" }}>
-            Learn with mamta
-          </Typography>
-          {!menuOpen && (<IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleMenu} sx={{ display: { sm: 'none' } }}>
-            <MenuIcon />
-          </IconButton>)}
-          <Box
-            component="nav"
-            sx={{
-              flexDirection: { xs: 'column', sm: 'row' }, 
-              alignItems:'center',
-              display: { xs: menuOpen ? 'flex' : 'none', sm: 'flex' },
-              gap: 2,
-              px: 2,
-              py: { xs: 2, sm: 0 },
-            }}
-          >
-            <Link to="/"   style={{ marginBottom: '1rem' }}>Home</Link>
-            <Link to="/about"  style={{ marginBottom: '1rem' }}>About</Link>
-            <Link to="/review" style={{ marginBottom: '1rem' }}>Review</Link>
-            <Link to="/Stulist" style={{ marginBottom: '1rem' }}>List of my students</Link>
-          </Box>
-        </Toolbar>
-      </AppBar>
 
       <Box
                   sx={{
                     overflow:'hidden',
                         position: 'relative',
                         minHeight:'100vh',
-                    backgroundImage: `url(${bi})`,
+                    
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     color: '#fff',
