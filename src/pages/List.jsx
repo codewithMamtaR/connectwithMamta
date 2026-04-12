@@ -802,7 +802,8 @@ export default function StudentList() {
     gap: 3,
     justifyContent: 'center',
     width: '100%',
-    px: 2
+    px: 2,
+    mt:10
   }}
 >
   {students.map((student, index) => (
