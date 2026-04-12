@@ -832,7 +832,7 @@ export default function StudentList() {
           alt={student.Name}
           sx={{
             height: 200,
-            objectFit: 'cover',
+            objectFit: 'contain',
             borderRadius: 2
           }}
         />
