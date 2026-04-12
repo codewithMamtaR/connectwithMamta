@@ -92,7 +92,7 @@ const NavMenu = () => {
           </Box>
           {/*making a list to show in mobile mode */}
           <List>
-            {['Home', 'About', 'Reviews', 'Students','Contact'].map((text) => (
+            {['Home', 'About', 'Review', 'List','Contact'].map((text) => (
               <ListItem button key={text} component={NavLink} style={navStyle} to={`/${text.toLowerCase()}`} onClick={() => setDrawerOpen(false)}>
                 <ListItemText primary={text} />
               </ListItem>
