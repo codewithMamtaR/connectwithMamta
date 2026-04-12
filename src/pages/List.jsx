@@ -1,9 +1,9 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Box, Container, List, ListItem, ListItemText, tableSortLabelClasses, emphasize } from '@mui/material';
+import {  Box, Container, List, ListItem, ListItemText, tableSortLabelClasses, emphasize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
-
+import {  Typography, Card, CardContent, CardMedia, Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import bi from '../assets/images/apple.webp';
 import am from '../assets/images/Amruta.webp';
