@@ -795,52 +795,73 @@ export default function StudentList() {
   return (
     <>
 
-      <Box
-                  sx={{
-                    overflow:'hidden',
-                    position: 'relative',
-                        minHeight:'100vh',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    color: 'black',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    px: 2,
-                    py: 4,
-                   
-                    zIndex:0,
-                      
-                  }}
-                >
-      <Box>
-         <Typography variant='h2' sx={{fontFamily: "'Tangerine', cursive" , mb:3, zIndex:2,position:'relative' }}>List of my Students</Typography>
-      </Box>
-      
+<Box
+  sx={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 3,
+    justifyContent: 'center',
+    width: '100%',
+    px: 2
+  }}
+>
+  {students.map((student, index) => (
+    <Box
+      key={index}
+      sx={{
+        width: {
+          xs: '100%',   // mobile
+          sm: '80%',    // small tablets
+          md: '45%',    // medium screens
+          lg: '30%'     // laptop
+        }
+      }}
+    >
+      <Card
+        sx={{
+          borderRadius: 3,
+          boxShadow: 3,
+          p: 2,
+          height: '100%'
+        }}
+      >
+        <CardMedia
+          component="img"
+          image={student.image}
+          alt={student.Name}
+          sx={{
+            height: 200,
+            objectFit: 'cover',
+            borderRadius: 2
+          }}
+        />
 
-      <Box  sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center',zIndex:2,position:'relative' }}>
-      <div id="stucont">
-      {students.map((student, index) => (
-        <div key={index} style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'center' }}>
-          <img src={student.image} alt={student.Name} style={{ maxWidth: '150px', borderRadius: '8px' }} />
-          <div>
-            <h2>Name: {student.Name}</h2>
-            <h3>Subject: {student.Subject}</h3>
-            <h3>Class: {student.Class}</h3>
-            {student.College ? (
-              <h3>College: {student.College}</h3>
-            ) : (
-              <h3>School: {student.School}</h3>
-            )}
-          </div>
-        </div>
-      ))}
-    </div>
-      </Box>
+        <CardContent sx={{ textAlign: 'center' }}>
+          <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
+            {student.Name}
+          </Typography>
 
+          <Typography variant="body1">
+            Subject: {student.Subject}
+          </Typography>
 
+          <Typography variant="body1">
+            Class: {student.Class}
+          </Typography>
+
+          {student.College ? (
+            <Typography variant="body1">
+              College: {student.College}
+            </Typography>
+          ) : (
+            <Typography variant="body1">
+              School: {student.School}
+            </Typography>
+          )}
+        </CardContent>
+      </Card>
+    </Box>
+  ))}
 </Box>
 
 
