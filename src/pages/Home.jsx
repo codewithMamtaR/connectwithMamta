@@ -122,7 +122,7 @@ export default function Home() {
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <SiPython size={24} color="#4a6fa5" style={{ marginRight: '8px' }} />
+          <SiCplusplus size={24} color="#4a6fa5" style={{ marginRight: '8px' }} />
             <Typography>C++</Typography>
           </Box>
 
