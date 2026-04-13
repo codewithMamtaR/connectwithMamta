@@ -1,14 +1,11 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Box, Container,  List, ListItem, ListItemText } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import bi from '../assets/images/apple.webp';
-import { Link } from 'react-router-dom';
+import {  Typography, Box } from '@mui/material';
 
 
 export default function Review() {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+
 
   return (
     <>

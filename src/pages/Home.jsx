@@ -1,21 +1,15 @@
 import React from 'react';
-import {  Card, CardContent, CardMedia, Typography, IconButton, Box, Container, List, ListItem, ListItemText } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import {  Card, CardContent, Typography, IconButton, Box,  } from '@mui/material';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { SiCplusplus, SiPython } from "react-icons/si";
-import TerminalIcon from '@mui/icons-material/Terminal';
-import DataObjectIcon from '@mui/icons-material/DataObject';
+
 import SchoolIcon from '@mui/icons-material/School';
 
-import { Link } from 'react-router-dom';
-import ComputerIcon from '@mui/icons-material/Computer';
-import CodeIcon from '@mui/icons-material/Code';
-import MemoryIcon from '@mui/icons-material/Memory';
-export default function Home() {
-  const [menuOpen, setMenuOpen] = React.useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+export default function Home() {
+  
 
   return (
     <>
@@ -120,7 +114,7 @@ export default function Home() {
           <Typography variant="h5" sx={{fontFamily: "'Quicksand', sans-serif", fontWeight: 'bold', mb: 2 }}>
             Engineering Courses
           </Typography>
-
+          <Box sx={{ ml: 4, mt: 1 }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <SiCplusplus size={24} color="#4a6fa5" style={{ marginRight: '8px' }} />
             <Typography>C++</Typography>
@@ -130,7 +124,7 @@ export default function Home() {
           <SiPython size={24} color="#6b8e23" style={{ marginRight: '8px' }} />
              <Typography>Python</Typography>
           </Box>
-
+</Box>
         </CardContent>
       </Card>
 
