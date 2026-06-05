@@ -87,6 +87,7 @@ import sd from '../assets/images/shweta.webp';
 import rsu from '../assets/images/riya.webp';
 import sid from '../assets/images/sid.webp';
 import al from '../assets/images/aanchal.webp';
+import mo from '../assets/images/hadap.webp';
 import zd from '../assets/images/zade.webp';
 import aks from '../assets/images/akshita.webp';
 import nwr from '../assets/images/nwr.webp';
@@ -112,6 +113,13 @@ export default function StudentList() {
       },
       {
         Name: 'Riya S',
+        Subject: 'Python',
+        Class: 'Second year',
+        College: 'IIIT,Pune',
+        image: nwr,
+      },
+      {
+        Name: 'Riya S',
         Subject: 'OOP C++',
         Class: 'First year',
         College: 'IIIT,Pune',
@@ -123,6 +131,13 @@ export default function StudentList() {
         Class: '12th',
         School: 'Montfort School,Nagpur',
         image: ru,
+      },
+      {
+        Name: 'Mohit H',
+        Subject: 'Computer Science State',
+        Class: '11th,12th',
+        School: 'MKH Sancheti Public School and Junior College,Nagpur',
+        image: mo,
       },
       
       {
@@ -156,7 +171,7 @@ export default function StudentList() {
       },
       {
         Name: 'Dolly N',
-        Subject: 'Computer Science Python CBSE',
+        Subject: 'Computer Science State',
         Class: '11th,12th',
         School: 'St.Paul High school,Nagpur',
         image: doll,
